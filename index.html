@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Day Love Spoke - 06-03-2025</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 600px;
+      padding: 20px;
+      text-align: center;
+    }
+    .password-section {
+      margin-top: 100px;
+      text-align: center;
+    }
+    .hidden {
+      display: none;
+    }
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .photo-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .surprise-button {
+      margin: 30px 0;
+      padding: 12px 20px;
+      font-size: 18px;
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .surprise-button:hover {
+      background-color: #ff9ab1;
+    }
+    .qr-section {
+      margin-top: 30px;
+    }
+    .qr-section img {
+      width: 200px;
+    }
+    .caption {
+      margin-top: 10px;
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container hidden" id="content">
+    <h1>The Day Love Spoke – 06-03-2025</h1>
+    <p>
+      One month ago, you said those three magical words... and since then, every heartbeat has echoed with love.<br>
+      This is a small corner of the internet, just for us — to smile, to feel, and to relive that moment.
+    </p>
+    
+    <div class="photo-gallery">
+      <img src="https://drive.google.com/uc?export=view&id=17lh2Y-oHZMXm9TEtVQJ6ZKntaTKB4qHg" alt="Photo 1" />
+      <img src="https://drive.google.com/uc?export=view&id=17jQ6aXPiWOGKM3MdbkgPU62B4xPMkhAf" alt="Photo 2" />
+      <img src="https://drive.google.com/uc?export=view&id=17ZKN7VdgWMvsC8W1tIlrWgwwGyo_Rm5_" alt="Photo 3" />
+      <img src="https://drive.google.com/uc?export=view&id=17cnsl6FC6E4NtpUWmqRW0PMugwhQ_XBV" alt="Photo 4" />
+    </div>
+    
+    <audio controls>
+      <source src="https://drive.google.com/uc?export=download&id=17hbwy7rfCQwhKF8IPlGC_1fNBy1XKZBR" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <button class="surprise-button" onclick="alert('A secret smile just for you.')">Click for a Surprise</button>
+    
+    <div class="qr-section">
+      <img src="romantic_qr_video_drive.png" alt="Romantic QR Code" />
+      <p class="caption">
+        Scan this to see something that words can’t hold…<br>
+        <small>(Hint: It's hidden just for you)</small>
+      </p>
+    </div>
+  </div>
+  
+  <div class="password-section" id="login">
+    <h2>Enter Password</h2>
+    <input type="password" id="passwordInput" placeholder="Password" />
+    <button onclick="checkPassword()">Enter</button>
+  </div>
+  
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      if (password === "Kuch nhi2") {
+        document.getElementById("content").classList.remove("hidden");
+        document.getElementById("login").style.display = "none";
+      } else {
+        alert("Wrong password, try again!");
+      }
+    }
+  </script>
+</body>
+</html>
